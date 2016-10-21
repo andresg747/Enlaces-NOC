@@ -1,0 +1,179 @@
+body{    overflow-x: hidden;overflow-y: hidden;}
+hr{margin-bottom: 10px;}
+
+.dropdown > a {
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.dropdown-menu.animated {
+	-webkit-animation-duration: 0.55s;
+	animation-duration: 0.55s;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+}
+.dropdown-menu.animated.fadeIn {
+	-webkit-animation-duration: 0.45s;
+	animation-duration: 0.45s;
+
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;  
+}
+
+/* Header */
+#header{margin-top: 10px;}
+#logo>img{width: 7em;}
+.separator{margin-top: 10px;}
+#titulo{margin-left: 50px;width: 320px;}
+#titulo>h3{margin-top: 10px;}
+#logo,#titulo,#searchbox{height: 48px;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content:center;align-items:center;align-content:center;}
+#logo > *,#titulo > *,#searchbox > *{order: 1;}
+#searchbox > span{margin-right: 20px;}
+
+
+/* Navbar */
+#navbar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 5px;
+}
+#ciudadestv{order:1;}
+#variablesEQ{order:2;}
+#variablesEN{order:3;}
+#redeshfc{order:4;}
+#SNE{order:5;}
+
+/* Content */
+#content{
+	background-image: url(../img/bg.png);
+	height: 535px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/* Dropdowns */
+.btn{padding: 5px 5px; background-color: #337ab7;}
+.links_externos > button{
+	padding: 4px 9px;
+	background-color: #fff;
+}
+.dropdown-menu{
+	left: -100px;
+	height: 185px;
+	overflow-y: scroll;
+}
+.links_externos .dropdown-menu{
+	left: 0px;
+}
+.dropup{position: absolute;}
+#caracas{
+	top: 28.5%;
+	left: 54.5%;
+}
+#barquisimeto{
+	top: 38.5%;
+	left: 34%;
+}
+#acarigua{
+	top: 48.5%;
+	left: 35.5%;
+}
+#anaco{
+	top: 49%;
+	left: 73.5%;
+}
+#barcelona{
+	top: 36%;
+	left: 72%;
+}
+#barinas{
+	top: 62%;
+	left: 27.5%;
+}
+#carora{
+	top: 35.5%;
+	left: 28%;
+}
+#charallave{
+	top: 34.3%;
+	left: 53.5%;
+}
+#cbolivar{
+	top: 71%;
+	left: 81%;
+}
+#cumana{
+	top: 31%;
+	left: 76%;
+}
+#eltigre{
+	top: 58%;
+	left: 75.5%;
+}
+#guanare{
+	top: 55%;
+	left: 31%;
+}
+#losteques{
+	top: 30.5%;
+	left: 53.2%;
+}
+#tinaquillo{
+	top: 45%;
+	left: 41.5%;
+}
+#maracaibo{
+	top: 27%;
+	left: 16%;
+}
+#maracay{
+	top: 34%;
+	left: 49%;
+}
+#turmero{
+	top: 34.5%;
+	left: 50.2%;
+}
+#maturin{
+	top: 43.5%;
+	left: 83.5%;
+}
+#merida{
+	top: 62%;
+	left: 20%;
+}
+#porlamar{
+	top: 22%;
+	left: 77.5%;
+}
+#puntofijo{
+	top: 8.5%;
+	left: 28%;
+}
+#sancristobal{
+	top: 77%;
+	left: 10.5%;
+}
+#sanfelipe{
+	top: 34%;
+	left: 38.5%;
+}
+#valencia{
+	top: 36%;
+	left: 45%;
+}
+#valera{
+	top: 50%;
+	left: 24.5%;
+}
+
+/* Autocomplete */
+#searchbox input {
+	background-image: url("../img/icon_search.png");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+.easy-autocomplete.eac-square input

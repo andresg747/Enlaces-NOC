@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enlaces NOC</title>
+	<!--    CSS    -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="./css/easy-autocomplete.themes.min.css">
+	<link rel="stylesheet" href="./css/easy-autocomplete.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!--    JS    -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="./js/jquery.easy-autocomplete.min.js"></script>
+	<script src="./js/bootstrap-tooltip.js"></script>
+	<script src="./js/app.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="header">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="logo" class="pull-right">
+								<img src="./img/LogoNocAzul.png" alt="">
+							</div>
+						</div>
+						<div class="col-xs-5">
+							<div id="titulo">
+								<h3>RED NACIONAL DE INTER</h3>
+							</div>
+						</div>
+						<div class="col-xs-5">
+							<div id="searchbox">
+								<input type="text" id="input_search">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="separator">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="navbar">
+
+					<!-- Ciudades Solo TV -->
+					<div class="links_externos dropdown" id="ciudadestv">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-animation="delay">
+							Ciudades Solo TV
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="https://mrtgbto.inter.com.ve/ro_bachaquero/ro_bachaquero.cgi">Router Bachaquero</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-bcr-01/sat-bcr-01.cgi">Sw. 2960 sat-bcr-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_cajaseca/ro_cajaseca.cgi">Router Caja Seca</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-cjs-01/sat-cjs-01.cgi">Sw. 2960 sat-cjs-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_chichiriviche/ro_chichiriviche.cgi">Router Chichiriviche</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-chi-01/sat-chi-01.cgi">Sw. 2950 sat-chi-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_cumarebo/ro_cumarebo.cgi">Router Cumarebo</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-cmb-01/sat-cmb-01.cgi">Sw. 2960 sat-cmb-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_elvigia/ro_elvigia.cgi">Router El Vigia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-vga-01/ic-vga-01.cgi">Sw. 2950 ic-vga-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-vga-02/ic-vga-02.cgi">Sw. 2950 ic-vga-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_gnr_01/ro_gnr_01.cgi">Router Guanare</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-gnr-01/ic-gnr-01.cgi">Sw. 2900 ic-gnr-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-gnr-02/ic-gnr-02.cgi">Sw. 2900 ic-gnr-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-gnr-core/sw-gnr-core.cgi">Sw. Guanare Core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_montalban/ro_montalban.cgi">Router 7200 Montalban</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-mtb-core/sw-mtb-core.cgi">Sw. 3750 sw-mtb-core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-mtb-01/ic-mtb-01.cgi">Sw. 2960 ic-mtb-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-mda-01/ic-mda-01.cgi">Sw. 2960 ic-mda-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-rbo-01/sat-rbo-01.cgi">Sw. 2950 sat-rbo-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_tucacas/ro_tucacas.cgi">Router Tucacas</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-tcc-core/sw-tcc-core.cgi">Sw. Tucacas Core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-tcc-01/sat-tcc-01.cgi">Sw. 2960 ic-tcc-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-tcc-02/ic-tcc-02.cgi">Sw. 2950 ic-tcc-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ups_tcc/ups_tcc.cgi">UPS Tucacas</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-chi-02/ic-chi-02.cgi">Sw. 2960 ic-chi-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-mrn-01/sat-mrn-01.cgi">Sw. 2960 ic-mrn-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_sanfernando/ro_sanfernando.cgi">Router San Fernando</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-sfa-01/sat-sfa-01.cgi">Sw. 2960 sat-sfa-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_coro/ro_coro.cgi">Router Vela de Coro</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sat-vel-01/sat-vel-01.cgi">Sw. 2960 sat-vel-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_urena/ro_urena.cgi">Router Urena</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-urn-01/ic-urn-01.cgi">Sw. 2960 ic-urn-01</a></li>
+						</ul>
+					</div>
+
+					<!-- Variables de los Equipos -->
+					<div class="links_externos dropdown" id="variablesEQ">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-animation="delay">
+							Variables de los Equipos
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="https://mrtgbto.inter.com.ve/cpu_router/cpu_router.cgi">CPU Routers</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/cpu_bsr/cpu_bsr.cgi">CPU BSR's</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/cpu_arris_ubr/cpu_arris_ubr.cgi">CPU ARRIS UBR's</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/cpu_firewall/cpu_firewall.cgi">CPU Firewall</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/memoria_router/memoria_router.cgi">Memoria Routers</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/memoria_firewall/memoria_firewall.cgi">Memoria Firewall</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/temperatura_router/temperatura_router.cgi">Temperatura Routers</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/temperatura_bsr/temperatura_bsr.cgi">Temperatura BSR's</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/total_cablemodem/total_cablemodem.cgi">Total CM Registrados</a></li>
+						</ul>
+					</div>
+
+					<!-- Variables Enlaces Inter -->
+					<div class="links_externos dropdown" id="variablesEN">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-animation="delay">
+							Variables Enlaces Inter
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="https://mrtgbto.inter.com.ve/ro_bqt_01/enlacescorpo/enlacescorpo.cgi">Totales Corporativos</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/cantv/cantv.cgi">Totales CANTV</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/movistar/movistar.cgi">Totales Movistar</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/total_tunnel/total_tunnel.cgi">Tunneles Telefonia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/smokeping/smokeping.cgi">Latencia Enlaces Barquisimeto</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/smokeping/smokeping.cgi">Latencia Enlaces Caracas</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/interfaces_ubr_bsr/interfaces_ubr_bsr.cgi">Nacional Ethernet CMTS</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/interfaces_core_ciudad/interfaces_core_ciudad.cgi">Trafico Nacional Interfaces</a></li>
+						</ul>
+					</div>
+
+					<!-- Red HFC -->
+					<div class="links_externos dropdown" id="redeshfc">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-animation="delay">
+							Red HFC
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/transponder.html">Acarigua</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/transponder.html">Anaco</a></li>                
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/transponder.html">Barcelona</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/transponder.html">Barquisimeto</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/transponder.html">Barinas</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/transponder.html">Caracas</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/transponder.html">Ciudad Bolivar</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/transponder.html">Charallave</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/transponder.html">El Tigre</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/transponder.html">Los Teques</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/transponder.html">Maracaibo</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/transponder.html">Maracay</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/transponder.html">Maturin</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/transponder.html">Merida</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/transponder.html">Punto Fijo</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/transponder.html">San Cristobal</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/transponder.html">San Felipe</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/transponder.html">Valencia</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/transponder.html">Valera</a></li>
+						</ul>
+					</div>
+					
+					<!-- Sistema Nacional de Energía -->
+					<div class="links_externos dropdown" id="SNE">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-animation="delay">
+							Sistema Nacional de Energía
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="https://mrtgbto.inter.com.ve/rectframe.html">Status Rectificadores DC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/upsframe.html">Status UPS</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/energia.html">Anaco</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/energia.html">Acarigua</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/energia.html">Barcelona</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/energia.html">Barinas</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/energia.html">Barquisimeto</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/energia.html">Caracas</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/energia.html">Charallave</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/energia.html">Cumana</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/energia.html">El Tigre</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/energia.html">Los Teques</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/energia.html">Maracaibo</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/energia.html">Maracay</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/energia.html">Maturin</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/energia.html">Merida</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/energia.html">Punto Fijo</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/energia.html">San Felipe</a></li>	
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/energia.html">San Cristobal</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/energiatcc.html">Tucacas</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/energia.html">Valencia</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/energia.html">Valera</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div id="content">
+
+					<!-- Caracas -->
+					<div id="caracas" class="dropup">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Caracas" data-animation="delay">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgccs.inter.com.ve/ro_ccs_brd_01.html">Router 12000 RO_BRD_01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ro_ccs_brd_02.html">Router 12000 RO_BRD_02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ro_ccs_core_01.html">Router 12410 Core</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ro_ccs_core_02.html">Router ASR9K Core 01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ro_ccs_01.html">Router 7609</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-ccs-core-02.html">Sw. 6509 CORE-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-ccs-01/sw-ccs-01.cgi">Sw. 2960 sw-ccs-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-ccs-02/sw-ccs-02.cgi">Sw. 2960 sw-ccs-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-ccs-03/sw-ccs-03.cgi">Sw. 3750 sw-ccs-03</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-pb-01/ic-ccs-pb-01.cgi">Sw. 2960 ic-ccs-pb-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-01/ic-ccs-01.cgi">Sw. 3750 ic-ccs-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-02/ic-ccs-02.cgi">Sw. 2950 ic-ccs-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-03/ic-ccs-03.cgi">Sw. 2950 ic-ccs-03</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-04/ic-ccs-04.cgi">Sw. 2950 ic-ccs-04</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-05/ic-ccs-05.cgi">Sw. 2950 ic-ccs-05</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-mcc-02/ic-ccs-mcc-02.cgi">Sw. 2960 ic-ccs-mcc-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-co-01/ic-ccs-co-01.cgi">Sw. 2960 ic-ccs-co-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-p2-01/ic-ccs-p2-01.cgi">Sw. 2960 ic-ccs-p2-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-p2-02/ic-ccs-p2-02.cgi">Sw. 2960 ic-ccs-p2-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-hd-01/ic-ccs-hd-01.cgi">Sw. 2950 ic-ccs-hd-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/pri_vid_net_sw/pri_vid_net_sw.cgi">Sw. 4948 pri_vid_net_sw</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-ccs-ccct-ocad-01/ic-ccs-ccct-ocad-01.cgi">Sw. 2960 ic-ccs-ccct-ocad-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/dla-ccs-01/dla-ccs-01.cgi">Sw. 2950 dla-ccs-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/vod-ccs-pp-01/vod-ccs-pp-01.cgi">Sw. 2950 vod-ccs-pp-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/vod-ccs-sts-01/vod-ccs-sts-01.cgi">Sw. 2950 vod-ccs-sts-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-gua-01/ic-gua-01.cgi">Sw. 2950 ic-gua-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-gua-02/ic-gua-02.cgi">Sw. 2950 ic-gua-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-lga-01/ic-lga-01.cgi">Sw. 2950 ic-lga-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-lga-02/ic-lga-02.cgi">Sw. 2950 ic-lga-02</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/ic-lga-04/ic-lga-04.cgi">Sw. 2950 ic-lga-04</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-sp-ccs-01/sw-sp-ccs-01.cgi">Sw. 2960 sw-sp-ccs-01</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sw-sp-ccs-02/sw-sp-ccs-02.cgi">Sw. 2960 sw-sp-ccs-02</a></li>     
+							<li><a href="https://mrtgccs.inter.com.ve/sw-sp-ccs-03/sw-sp-ccs-03.cgi">Sw. 2960 sw-sp-ccs-03</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/sandvine.html">Plataforma Sandvine</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/pix_primary/pix_primary.cgi">PIX 535 Primario</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/pix_failover/pix_failover.cgi">PIX 535 Secundario</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/pix_nacional_primario/pix_nacional_primario.cgi">PIX 535 Nacional Primario</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/pix_nacional_secundario/pix_nacional_secundario.cgi">PIX 535 Nacional Secundario</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/c4_ccs_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/c4_ccs_02.html">ARRIS C4 II</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/c4_ccs_03.html">ARRIS C4 III</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/c4_gua_01.html">ARRIS C4 I Guarenas</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/bsr_ccs_04.html">Motorola BSR64000 La Guaira I</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/bsr_lg_02.html">Motorola BSR64000 La Guaira II</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/transponder.html">Red HFC Caracas</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/hub_ccs_ambiental/hub_ccs_ambiental.cgi">Sistema Ambiental Caracas</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/dns_nac.html">Servidores DNS Nacionales</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/dns_ccs.html">Servidores DNS Caracas</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/dns_val.html">Servidores DNS Valencia</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/dns_mbo.html">Servidores DNS Maracaibo</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/mail.html">Servidores Mail</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/mrtgccs/mrtgccs.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/solollama.html">Solo Llama</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/testlocal/testlocal.cgi">Test Local</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/testinternet/testinternet.cgi">Test Internet</a></li>
+							<li><a href="https://mrtgccs.inter.com.ve/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosccs.inter.com.ve/nagios/">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Barquisimeto -->
+					<div id="barquisimeto" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Barquisimeto">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbto.inter.com.ve/Router_CGN_Pruebas/Router_CGN_Pruebas.cgi">Router_CGN_Pruebas</li></a>
+							<li><a href="https://mrtgbto.inter.com.ve/ro_bqt_01.html">Router 7609</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-bqt-core.html">Sw. 6506 CORE</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-bqt-01/sw-bqt-01.cgi">Sw. 2960 sw-bqt-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-bqt-02/sw-bqt-02.cgi">Sw. 2960 sw-bqt-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-bqt-03/sw-bqt-03.cgi">Sw. 2960 sw-bqt-03</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-cbr-core/sw-cbr-core.cgi">Sw. 3750 sw-cbr-core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-bqt-lab-01/sw-bqt-lab-01.cgi">Sw. 2960 sw-bqt-lab-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/srv_rtp3_ldi/srv_rtp3_ldi.cgi">RTP 3 LDI</a></li>
+							<li><a href="https://lanbqt.inter.com.ve">Red Lan Bqto-Cabudare</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dla-bqt-01/dla-bqt-01.cgi">Sw. 2950 dla-bqt-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dla-bqt-02/dla-bqt-02.cgi">Sw. 2950 dla-bqt-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dla-cbr-01/dla-cbr-01.cgi">Sw. 2950 dla-cbr-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dgt-cbr-ctd-01/dgt-cbr-ctd-01.cgi">Sw. Catalyst 4948 dgt-cbr-ctd-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dgt-cbr-ctd-02/dgt-cbr-ctd-02.cgi">Sw. Catalyst 4948 dgt-cbr-ctd-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/pix_primary.html">PIX 535 Primario</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/pix_failover.html">PIX 535 Failover</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/c4_bqt_01.html">ARRIS C4 Barquisimeto I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/c4_bqt_02.html">ARRIS C4 Barquisimeto II</a></li>   
+							<li><a href="https://mrtgbto.inter.com.ve/c4_cbr_01.html">ARRIS C4 Cabudare I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/noc.html">Servidores NOC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/telefonia.html">Equipos Telefonia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/hub_ambiental/hub_ambiental.cgi">Sistema Ambiental</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/red_umi_equipos.html">Red UMI</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/testspeed.html">Test de velocidad</a></li>
+							<li><a href="http://nagioscorp.intercable.net.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Acarigua -->
+					<div id="acarigua" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Acarigua">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/ro_acg_01/ro_acg_01.cgi">Router 7206</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/sw-acg-core/sw-acg-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/ic-acg-01/ic-acg-01.cgi">Sw. 2950 ic-acg-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/ic-acg-02/ic-acg-02.cgi">Sw. 2950 ic-acg-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/ic-acg-03/ic-acg-03.cgi">Sw. 2950 ic-acg-03</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/ic-trn-01/ic-trn-01.cgi">Sw. 2950 ic-trn-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/c4c_acg_01.html">ARRIS C4C I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/mrtgacg/mrtgacg.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/acarigua/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosacg.inter.com.ve/nagios/">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Anaco -->
+					<div id="anaco" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Anaco">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/ro_anc_01/ro_anc_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/sw-anc-core/sw-anc-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/ic-anc-01/ic-anc-01.cgi">Sw. 2950 ic-anc-01 </a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/ic-anc-02/ic-anc-02.cgi">Sw. 2900 ic-anc-02 </a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/ubr_anc_01.html">Cisco UBR7246 I</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/pix_primary/pix_primary.cgi">PIX-515E Primario</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/pix_failover/pix_failover.cgi">PIX-515E Failover</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/mrtganc/mrtganc.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/transponder.html">Red HFC Anaco</a></li>
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/energia.html">Sistema de Energia</a></li>			
+							<li><a href="https://mrtganc.inter.com.ve/ciudades/anaco/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosanc.inter.com.ve/nagios/">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Barcelona -->
+					<div id="barcelona" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Barcelona">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/ro_bna_01/ro_bna_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/sw-bna-core/sw-bna-core.cgi">Sw. 3750E CORE</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/ic-bna-01/ic-bna-01.cgi">Sw. 2960 ic-bna-01 </a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/ic-bna-02/ic-bna-02.cgi">Sw. 2950 ic-bna-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/dla-bna-01/dla-bna-01.cgi">Sw. 2950 dla-bna-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/c4_bna_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/mrtgbna/mrtgbna.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/barcelona/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosbna.inter.com.ve/nagios/">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Barinas -->
+					<div id="barinas" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Barinas">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/ro_brn_01/ro_brn_01.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/sw-brn-core/sw-brn-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/ic-brn-01/ic-brn-01.cgi">Sw. 2950 ic-brn-01</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/ic-brn-02/ic-brn-02.cgi">Sw. 2950 ic-brn-02</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/dla-brn-01/dla-brn-01.cgi">Sw. 2950 dla-brn-01</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/bsr_brn_02.html">Motorola BSR64000 II</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/mrtgbrn/mrtgbrn.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgbrn.inter.com.ve/ciudades/barinas/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosbrn.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Carora -->
+					<div id="carora" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Carora">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/ro_crr_01/ro_crr_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/sw-crr-core/sw-crr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/ic-crr-01/ic-crr-01.cgi">Sw. 2960 ic-crr-01</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/pix_primary/pix_primary.cgi">PIX 515 Primario</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/pix_failover/pix_failover.cgi">PIX 515 Failover</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/ubr_crr_01.html">Cisco UBR7246 I</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/mrtgcrr/mrtgcrr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgcrr.inter.com.ve/ciudades/carora/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagioscrr.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Charallave -->
+					<div id="charallave" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Charallave">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/ro_chv_01/ro_chv_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/ro_chv_02/ro_chv_02.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/sw-chv-core/sw-chv-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/ic-chv-01/ic-chv-01.cgi">Sw. 2960 ic-chv-01</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/ic-chv-02/ic-chv-02.cgi">Sw. 2950 ic-chv-02</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/ic-chv-arc-ocad-01-2960/ic-chv-arc-ocad-01-2960.cgi">Sw. 2950 ic-chv-arc-ocad-01-2960</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/c4c_chv_01.html">Arris C4C I </a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/mrtgchv/mrtgchv.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgchv.inter.com.ve/ciudades/charallave/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagioschv.inter.com.ve/nagios">Nagios Corporativo</a></li>      
+						</ul>
+					</div>
+
+					<!-- Ciudad Bolívar -->
+					<div id="cbolivar" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Ciudad Bolívar">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/ro_cdb_01/ro_cdb_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/sw-cdb-core-b/sw-cdb-core-b.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/ic-cdb-01/ic-cdb-01.cgi">Sw. 2950 ic-cdb-01</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/ic-cdb-02/ic-cdb-02.cgi">Sw. 2950 ic-cdb-02</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/ic-cdb-03/ic-cdb-03.cgi">Sw. 2960 ic-cdb-03</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/dla-cdb-01/dla-cdb-01.cgi">Sw. 2950 dla-cdb-01</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/c4c_cdb_01.html">ARRRIS C4C I</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/mrtgcdb/mrtgcdb.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgcdb.inter.com.ve/ciudades/ciudadbolivar/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagioscdb.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Cumaná -->
+					<div id="cumana" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Cumaná">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/ro_cmn_01/ro_cmn_01.cgi">Router 7206</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/sw-cmn-core/sw-cmn-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/ic-cmn-01/ic-cmn-01.cgi">Sw. 2960 ic-cmn-01</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/ic-cmn-02/ic-cmn-02.cgi">Sw. 2960 ic-cmn-02</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/c4c_cmn_01.html">ARRRIS C4C I</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/mrtgcmn/mrtgcmn.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgcmn.inter.com.ve/ciudades/cumana/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagioscmn.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- El Tigre -->
+					<div id="eltigre" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="El Tigre">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/ro_tgr_01/ro_tgr_01.cgi">Router 7206</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/sw-tgr-core/sw-tgr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/ic-tgr-01/ic-tgr-01.cgi">Sw. 2960 ic-tgr-01</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/ic-tgr-02/ic-tgr-02.cgi">Sw. 2924 ic-tgr-02</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/pix_primary/pix_primary.cgi">PIX 515 Primario</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/pix_failover/pix_failover.cgi">PIX 515 Failover</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/bsr_tgr_01.html">Motorola BSR64000 I</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/mrtgtgr/mrtgtgr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgtgr.inter.com.ve/ciudades/eltigre/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiostgr.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Guanare -->
+					<div id="guanare" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Guanare">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbto.inter.com.ve/guanare/ro_gnr_01/ro_gnr_01.cgi">Router Guanare</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/guanare/sw-gnr-core/sw-gnr-core.cgi">Sw. Guanare Core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/guanare/ic-gnr-01/ic-gnr-01.cgi">Sw. 2900 ic-gnr-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ic-gnr-02/ic-gnr-02.cgi">Sw. 2900 ic-gnr-02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ubr_gnr_01.html">Cisco UBR7223 I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/guanare/pix_gnr_01/pix_gnr_01.cgi">PIX 515E Primario</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/guanare/pix_gnr_02/pix_gnr_02.cgi">PIX 515E Failover</a></li>
+						</ul>
+					</div>
+
+					<!-- Los Teques -->
+					<div id="losteques" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Los Teques">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="//mrtgbto.inter.com.ve/ciudades/losteques/ro_ltq_01/ro_ltq_01.cgi"">Router ASR1002</a></li>
+							<li><a href="//mrtgbto.inter.com.ve/ciudades/losteques/ro_ltq_02/ro_ltq_02.cgi"">Router 7200</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/sw-ltq-core/sw-ltq-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/ic-ltq-01/ic-ltq-01.cgi">Sw. 2950 ic-ltq-01 </a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/ic-ltq-ldr-01/ic-ltq-ldr-01.cgi">Sw. 2960 ic-ltq-ldr-01 </a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/ic-ltq-ldr-02/ic-ltq-ldr-02.cgi">Sw. 2960 ic-ltq-ldr-02 </a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/ic-ltq-ldr-ocad-01/ic-ltq-ldr-ocad-01.cgi">Sw. 2960 ic-ltq-ldr-ocad-01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/c4_ltq_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/mrtgltq/mrtgltq.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/ciudades/losteques/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosltq.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Tinaquillo -->
+					<div id="tinaquillo" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Tinaquillo Tinaco San Carlos">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgbto.inter.com.ve/ro_tnq_01/ro_tnq_01.cgi">Router Tinaquillo</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-tnq-core/sw-tnq-core.cgi">Sw.3750 Tinaquillo core</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-tnq-01/sw-tnq-01.cgi">Sw.2960 Tinaquillo 01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/dla-tnq-01/dla-tnq-01.cgi">Sw.2950T dla-tnq-01 Tinaquillo</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-tnc-01/sw-tnc-01.cgi">Sw.2960 Tinaco 01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-tnc-02/sw-tnc-02.cgi">Sw.2960 Tinaco 02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-snc-01/sw-snc-01.cgi">Sw.3750 San carlos 01</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-snc-02/sw-snc-02.cgi">Sw.2960 San carlos 02</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/sw-snc-03/sw-snc-03.cgi">Sw.2960 San carlos 03</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/pix_tnq_01/pix_tnq_01.cgi">Pix Primario Tinaquillo</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/pix_tnq_02/pix_tnq_02.cgi">Pix Failover Tinaquillo</a></li>
+							<li><a href="https://mrtgbto.inter.com.ve/rect_tnq/rect_tnq.cgi">Rectificador Tinaquillo</a></li>	
+						</ul>
+					</div>
+
+					<!-- Maracaibo -->
+					<div id="maracaibo" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Maracaibo">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ro_mbo_01.html">Router 7606</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/sw-mbo-core.html">Sw. 4507 CORE</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/sw-mbo-01/sw-mbo-01.cgi">Sw. 2950 sw-mbo-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-mbo-01/ic-mbo-01.cgi">Sw. 2960 ic-mbo-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-mbo-02/ic-mbo-02.cgi">Sw. 2950 ic-mbo-02</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-mbo-03/ic-mbo-03.cgi">Sw. 2924 ic-mbo-03</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-mbo-co-01/ic-mbo-co-01.cgi">Sw. 2950 ic-mbo-co-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-mbo-smb-ocad-01/ic-mbo-smb-ocad-01.cgi">Sw. 2960 ic-smb-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/sw-col-core/sw-col-core.cgi">Sw. 3750 sw-col-core</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-col-01/ic-col-01.cgi">Sw. 2960 ic-col-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-cbm-01/ic-cbm-01.cgi">Sw. 2950 ic-cbm-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/ic-cbm-02/ic-cbm-02.cgi">Sw. 2950 ic-cbm-02</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/dla-mbo-01/dla-mbo-01.cgi">Sw. 2950 dla-mbo-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/dgt-mbo-ctd-01/dgt-mbo-ctd-01.cgi">Sw. 4948 dgt-mbo-ctd-01</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/dgt-mbo-ctd-02/dgt-mbo-ctd-02.cgi">Sw. 4948 dgt-mbo-ctd-02</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/dla-mbo-02/dla-mbo-02.cgi">Sw. 2950 dla-mbo-02</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/asa_primary/asa_primary.cgi">ASA 5510 Primario </a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/asa_failover/asa_failover.cgi">ASA 5510 Failover </a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/bsr_mbo_01.html">Motorola BSR64000 I</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/bsr_col_01.html">Motorola BSR64000 COL I</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/c4_mbo_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/mrtgmbo/mrtgmbo.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgmbo.inter.com.ve/ciudades/maracaibo/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosmbo.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Maracay -->
+					<div id="maracay" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Maracay">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ro_mcy_01.html">Router Maracay</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/sw-mcy-core.html">Sw. 3750 MARACAY CORE</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-mcy-01/ic-mcy-01.cgi">Sw. 2924 ic-mcy-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-cga-01/ic-cga-01.cgi">Sw. 2950 ic-cga-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-snj-01/ic-snj-01.cgi">Sw. 2950 ic-snj-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-vdc-01/ic-vdc-01.cgi">Sw. 2950 ic-vdc-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/c4_mcy_01.html">ARRIS C4 Maracay I</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/mrtgmcy/mrtgmcy.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosmcy.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Turmero -->
+					<div id="turmero" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Turmero">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ro_tur_01.html">Router ASR1002</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/sw-tur-core/sw-tur-core.cgi">Sw. 3750 TURMERO CORE</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/sw-tur-01/sw-tur-01.cgi">Sw. 2950 sw-tur-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-tur-01/ic-tur-01.cgi">Sw. 2960 ic-tur-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-tur-02/ic-tur-02.cgi">Sw. 2950 ic-tur-02</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/ic-tur-03/ic-tur-03.cgi">Sw. 2950 ic-tur-03</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/asa_failover/asa_failover.cgi"> ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/dla-tur-01/dla-tur-01.cgi">Sw. 2950 dla-tur-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/dgt-tur-ctd-01/dgt-tur-ctd-01.cgi">Sw. 4948 dgt-tur-ctd-01</a></li>
+							<li><a href="https://mrtgmcy.inter.com.ve/ciudades/maracay/c4_tur_01.html">ARRIS C4 Turmero I</a></li>
+							<li><a href="https://nagiosmcy.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Maturín -->
+					<div id="maturin" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Maturín">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/ro_mtr_01/ro_mtr_01.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/sw-mtr-core/sw-mtr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/ic-mtr-01/ic-mtr-01.cgi">Sw. 2960 ic-mtr-01</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/ic-mtr-02/ic-mtr-02.cgi">Sw. 2950 ic-mtr-02</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/ic-mtr-03/ic-mtr-03.cgi">Sw. 2960 ic-mtr-03</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/ic-mtr-sgo-ocad-01/ic-mtr-sgo-ocad-01.cgi">Sw. 2960 ic-mtr-sgo-ocad</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/dla-mtr-01/dla-mtr-01.cgi">Sw. 2950 dla-mtr-01</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/asa_primary/asa_primary.cgi"> ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/asa_failover/asa_failover.cgi"> ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/c4c_mtr_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/transponder.html">Red HFC Maturin</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/mrtgmtr/mrtgmtr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgmtr.inter.com.ve/ciudades/maturin/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosmtr.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Merida -->
+					<div id="merida" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Mérida">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ro_mrd_01/ro_mrd_01.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ro_mrd_02/ro_mrd_02.cgi">Router II 7200</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/peerapp/peerapp.cgi">PeerApp</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/sw-mrd-core/sw-mrd-core.cgi">Sw. 3750 CORE </a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/sw-mrd-core-02/sw-mrd-core-02.cgi">Sw. 3750 CORE NUEVO</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ic-mrd-ocad-ccl-01/ic-mrd-ocad-ccl-01.cgi">Sw. 2960 ic-mrd-ocad-ccl-01</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ic-mrd-01/ic-mrd-01.cgi">Sw. 2960 ic-mrd-01</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ic-mrd-02/ic-mrd-02.cgi">Sw. 2950 ic-mrd-02</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ic-mrd-03/ic-mrd-03.cgi">Sw. 2900 ic-mrd-03</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/ic-mrd-04/ic-mrd-04.cgi">Sw. 2950 ic-mrd-04</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/dla-mrd-01/dla-mrd-01.cgi">Sw. 2960 dla-mrd-01</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/bsr_mrd_01.html"">Motorola BSR64000 I</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/bsr_mrd_02.html"">Motorola BSR64000 II</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/mrtgmrd/mrtgmrd.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgmrdinter.com.ve/ciudades/merida/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgmrd.inter.com.ve/ciudades/merida/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosmrd.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Porlamar -->
+					<div id="porlamar" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Porlamar">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/ro_plr_01/ro_plr_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/ro_plr_02/ro_plr_02.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/peerapp/peerapp.cgi">PeerApp </a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/sw-plr-core/sw-plr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/sw-plr-core-nuevo/sw-plr-core-nuevo.cgi">Sw. 2960 CORE</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/sw-plr-core-02/sw-plr-core-02.cgi">Sw. 3750 CORE 02</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/dla-plr-01/dla-plr-01.cgi">Sw. 2950 dla-plr-01</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/pix_primary/pix_primary.cgi">PIX 515 Primario</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/pix_failover/pix_failover.cgi">PIX 515 Failover</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/bsr_plr_01.html">Motorola BSR64000 I</a></li>	
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/bsr_plr_02.html">Motorola BSR64000 II</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/rect_plr/rect_plr.cgi">Rectificador Porlamar</a></li>
+							<li><a href="https://mrtgplr.inter.com.ve/ciudades/porlamar/mrtgplr/mrtgplr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://nagiosplr.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Punto Fijo -->
+					<div id="puntofijo" class="dropdown">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="top" title="Punto Fijo">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/ro_ptf_01/ro_ptf_01.cgi">Router ASR1002</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/ro_ptf_02/ro_ptf_02.cgi">Router II 7200</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/sw-ptf-core/sw-ptf-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/ic-ptf-01/ic-ptf-01.cgi">Sw. 2950 ic-ptf-01</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/ic-ptf-02/ic-ptf-02.cgi">Sw. 2950 ic-ptf-02</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/ic-ptf-ocad-ajl-01/ic-ptf-ocad-ajl-01.cgi">Sw. 2960 ic-ptf-ocad-ajl-01</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/dla-ptf-01/dla-ptf-01.cgi">Sw. 2950 dla-ptf-01</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/asa_primary/asa_primary.cgi">ASA 5510 Primario </a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/asa_failover/asa_failover.cgi">ASA 5510 Failover </a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/bsr_ptf_01.html">Motorola BSR64000 I</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/bsr_ptf_02.html">Motorola BSR64000 II</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/mrtgptf/mrtgptf.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgptf.inter.com.ve/ciudades/puntofijo/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosptf.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- San Cristobal -->
+					<div id="sancristobal" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="San Cristóbal">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ro_scr_01/ro_scr_01.cgi">Router 7204</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/sw-scr-core/sw-scr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ic-scr-smb-ocad-01/ic-scr-smb-ocad-01.cgi">Sw. 2960 ic-scr-smb-ocad-01</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ic-scr-01/ic-scr-01.cgi">Sw. 2960 ic-scr-01</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ic-scr-02/ic-scr-02.cgi">Sw. 2960 ic-scr-02</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ic-scr-03/ic-scr-03.cgi">Sw. 2960 ic-scr-03</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ic-scr-04/ic-scr-04.cgi">Sw. 2960 ic-scr-04</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/dla-scr-01/dla-scr-01.cgi">Sw. 2950 dla-scr-01</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/pix_primary/pix_primary.cgi">ASA 5510 Primario </a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/pix_failover/pix_failover.cgi">ASA 5510 Failover </a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/c4c_scr_01.html">ARRIS C4C I</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/ups_scr/ups_scr.cgi">Sistema de Energia</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/mrtgscr/mrtgscr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgscr.inter.com.ve/ciudades/sancristobal/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagioscr.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- San Felipe -->
+					<div id="sanfelipe" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="San Felipe">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/ro_sfp_01/ro_sfp_01.cgi">Router 7206</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/sw-sfp-core/sw-sfp-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/ic-sfp-01/ic-sfp-01.cgi">Sw. 2950 ic-sfp-01</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/ic-sfp-02/ic-sfp-02.cgi">Sw. 2950 ic-sfp-02</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/c4c_sfp_01.html">ARRIS C4C I</a></li>	
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/mrtgsfp/mrtgsfp.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgsfp.inter.com.ve/ciudades/sanfelipe/testspeed.html">Test de velocidad</a></li>	
+							<li><a href="https://nagiosfp.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Valencia -->
+					<div id="valencia" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Valencia">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ro_val_01.html">Router CISCO 7600</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/sw-val-core-nuevo.html">Sw. 4500 CORE</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ic-val-01/ic-val-01.cgi">Sw. 2950 ic-val-rc-01</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ic-toc-01/ic-toc-01.cgi">Sw. 3524 ic-toc-01</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ic-sdg-01/ic-sdg-01.cgi">Sw. 3750 ic-sdg-cst-01</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ic-sdg-02/ic-sdg-02.cgi">Sw. 3550 ic-sdg-cst-02</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/ic-val-cst-01/ic-val-cst-01.cgi">Sw. 2960 ic-val-cst-01</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/pix_primary/pix_primary.cgi">PIX 535 Primario</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/pix_failover/pix_failover.cgi">PIX 535 Failover</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/c4_val_01.html">ARRIS C4 I</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/c4_val_02.html">ARRIS C4 II</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/mrtgval/mrtgval.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/energia.html">Sistema de Energia</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgval.inter.com.ve/ciudades/valencia/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosval.inter.com.ve/nagios">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+
+					<!-- Valera -->
+					<div id="valera" class="dropup">
+						<button class="btn btn-default dropdown-toggle black-tooltip" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Valera">
+						</button>
+						<ul class="dropdown-menu" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/peerapp/peerapp.cgi">PeerApp Cache</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/peerappserver/peerapp.cgi">PeerApp Server</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/ro_vlr_01/ro_vlr_01.cgi">Router 7206</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/sw-vlr-core/sw-vlr-core.cgi">Sw. 3750 CORE</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/ic-vlr-01/ic-vlr-01.cgi">Sw. 2950 ic-vlr-01</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/ic-vlr-02/ic-vlr-02.cgi">Sw. 2950 ic-vlr-02</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/ic-vlr-03/ic-vlr-03.cgi">Sw. 2960 ic-vlr-03</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/asa_primary/asa_primary.cgi">ASA 5510 Primario</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/asa_failover/asa_failover.cgi">ASA 5510 Failover</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/c4c_vlr_01.html">ARRIS C4C I</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/mrtgvlr/mrtgvlr.cgi">Servidor MRTG/Nagios</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/transponder.html">Red HFC</a></li>
+							<li><a href="https://mrtgvlr.inter.com.ve/ciudades/valera/testspeed.html">Test de velocidad</a></li>
+							<li><a href="https://nagiosvlr.inter.com.ve/nagios/">Nagios Corporativo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
